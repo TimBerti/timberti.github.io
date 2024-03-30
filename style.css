@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+#about, #projects {
+    padding: 20px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-card img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
