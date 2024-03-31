@@ -67,8 +67,8 @@ a:hover {
 
 .project-card img {
     flex: 0 0 auto; /* Don't grow, don't shrink, auto for natural aspect ratio */
-    width: 150px; /* Fixed width for all images */
-    height: 100px; /* Fixed height for all images */
+    width: 300px; /* Fixed width for all images */
+    height: 200px; /* Fixed height for all images */
     object-fit: cover; /* Cover the area without breaking aspect ratio */
     margin-right: 20px;
     border-radius: 5px;
