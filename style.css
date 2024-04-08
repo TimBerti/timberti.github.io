@@ -41,6 +41,24 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
+.about-me-container {
+    display: flex;
+    align-items: center; /* Vertically aligns the image and text in the middle */
+}
+
+.about-me-text {
+    flex: 1; /* This means the text will take up the remaining space */
+}
+
+.portrait {
+    flex: 0 0 auto; /* This means the image won't grow or shrink, and its base size is automatic */
+    margin-left: 40px; /* Adds some space between the image and the text */
+    display: block;
+    max-width: 30%; /* Ensures the image is never larger than its container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes the portrait circular */
+}
+
 .project-card {
     display: flex;
     background: #fff;
@@ -94,6 +112,17 @@ h1, h2 {
 @media (max-width: 768px) {
     .container {
         padding: 10px;
+    }
+
+    .about-me-container {
+        flex-direction: column; /* Stack image and text on top of each other */
+    }
+
+    .portrait {
+        order: -1; /* This will place the image above the text */
+        margin-bottom: 20px; /* Adds some space between the image and the text */
+        margin-left: 0; /* Removes the margin on the left */
+        max-width: 50%; /* Make the image full width on small screens */
     }
 
     .project-card {
