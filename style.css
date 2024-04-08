@@ -28,15 +28,6 @@ h1, h2 {
     color: #333;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 .nav-links a {
     margin-right: 15px;
 }
@@ -78,6 +69,25 @@ a:hover {
     color: #666;
     margin: 0;
     text-align: justify;
+}
+
+.project-button {
+    display: inline-block;
+    background-color: #007BFF; /* Primary button color */
+    color: #FFFFFF; /* Text color */
+    padding: 12px 24px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Text size */
+    border: none; /* Removes the default border */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+    border-radius: 5px; /* Rounds the corners */
+    text-decoration: none; /* Removes underline from links */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    margin-top: 20px; /* Adds space between the button and the text */
+}
+
+.project-button:hover {
+    background-color: #0056b3; /* Darker shade for hover state */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds shadow to lift the button */
 }
 
 /* Responsive design for smaller screens */

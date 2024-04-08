@@ -16,67 +16,87 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hi, I'm Tim, a master's student in physics at KIT and a research assistant at the Forschungszentrum Informatik. Currently I'm writing my master's thesis on identifying color vision deficiencies using machine learning algorithms on EEG data. In general my research interests lie in understanding complex systems using machine learning, statistics and simulation. 
-            Below are some of the projects I've worked on. Feel free to contact me if you would like to discuss my current research or potential opportunities.
+            Hi, I'm Tim, a master's student in physics at the Karlsruhe Institute of Technology (KIT) and a research assistant at the Forschungszentrum Informatik (FZI). Currently I'm writing my master's thesis on identifying color vision deficiencies using machine learning algorithms on EEG data. In general my research interests lie in understanding complex systems using machine learning, statistics and simulation. 
+        </p>
+        <p>
+            Below are some of the projects I've worked on. If you want to learn more about a project, just click on it to get to it's github page. Feel free to contact me if you would like to discuss my current research or potential opportunities.
         </p>
         <p class="nav-links"><a href="mailto:tim.fabian.berti@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/tim-berti/">LinkedIn</a> | <a href="https://www.github.com/TimBerti">GitHub</a></p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <a class="project-card" href="https://github.com/TimBerti/diffusion-limited-aggregation">
+        <div class="project-card">
             <img src="./images/graph.png" alt="DLA">
             <div>
                 <h3>Diffusion-Limited Aggregation</h3>
                 <p class="project-description">
                     Using convolutional neural networks (CNN) and graph neural networks (GNN), to predict the growth patterns of diffusion-limited aggregation (DLA) clusters, which are fractal structures that form when particles aggregate in a random walk process.
                 </p>
+                <button class="project-button" onclick="window.location.href='https://github.com/TimBerti/diffusion-limited-aggregation'">
+                    Read More
+                </button>
             </div>
-        </a>
-        <a class="project-card" href="https://github.com/TimBerti/donut-augmentation">
+        </div>
+        <div class="project-card">
             <img src="./images/donut.png" alt="Donut">
             <div>
                 <h3>Donut Augmentation</h3>
                 <p class="project-description">
                     Introduction of a data augmentation technique for CNNs by wrapping images in torus form, which enables shift transformations without loss of information and thus promotes translation invariance in models trained on images with features near the edge.
                 </p>
+                <button class="project-button" onclick="window.location.href='https://github.com/TimBerti/donut-augmentation'">
+                    Read More
+                </button>
             </div>
-        </a>
-        <a class="project-card" href="./articles/generalized_cone_kernel.html">
+        </div>
+        <div class="project-card">
             <img src="./images/generalized_cone_kernel.png" alt="Custom Kernel">
             <div>
                 <h3>Constructing Custom Kernels</h3>
                 <p class="project-description">
                     A notebook that demonstrates employing domain knowledge to construct custom kernels for Support Vector Machines (SVM) to improve classification performance on a synthetic dataset.
                 </p>
+                <button class="project-button" onclick="window.location.href='./articles/generalized_cone_kernel.html'">
+                    Read More
+                </button>
             </div>
-        </a>
-        <a class="project-card" href="https://github.com/TimBerti/pharynx-cv">
+        </div>
+        <div class="project-card">
             <img src="./images/superpixel.png" alt="Pharynx">
             <div>
                 <h3>Pharynx CV</h3>
                 <p class="project-description">
                     Analysis of images acquired with a low-cost endoscope and a 3D-printed holder using transfer learning with a ResNet18 model, image segmentation and LIME for feature importance to investigate muscle activation in the mouth and throat during Frenzel equalization, a pressure equalization technique commonly used by scuba divers.
                 </p>
+                <button class="project-button" onclick="window.location.href='https://github.com/TimBerti/pharynx-cv'">
+                    Read More
+                </button>
             </div>
-        </a>
-        <a class="project-card" href="https://github.com/TimBerti/magnetic-dipole-lattice">
+        </div>
+        <div class="project-card">
             <img src="./images/lattice_100.png" alt="Magnetic Dipole Lattice">
             <div>
                 <h3>Magnetic Dipole Lattice</h3>
                 <p class="project-description">
                     Simulation of magnetic dipoles on a 2D lattice, employing Verlet integration and a Nosé thermostat to explore behaviors like magnetic domain formation, phase transitions and hysteresis effects.
                 </p>
+                <button class="project-button" onclick="window.location.href='https://github.com/TimBerti/magnetic-dipole-lattice'">
+                    Read More
+                </button>
             </div>
-        </a>
-        <a class="project-card" href="https://github.com/TimBerti/ssvep-cvd">
+        </div>
+        <div class="project-card">
             <img src="./images/eeg.png" alt="EEG">
             <div>
                 <h3>Identifying Color Vision Deficiencies in EEG Data</h3>
                 <p class="project-description">
                     Stimulating steady-state visually evoked potentials (SSVEP) in subjects with and without color vision deficiencies to investigate differences in brain activity using signal processing and machine learning techniques like RANSAC detrending, Butterworth filters, Canonical Correlation Analysis, Wavelet Transforms, Principal Component Analysis and Support Vector Machines.
                 </p>
+                <button class="project-button" onclick="window.location.href='https://github.com/TimBerti/ssvep-cvd'">
+                    Read More
+                </button>
             </div>
-        </a>
+        </div>
     </section>
     <section id="contact" class="centered">
         <h2>Contact</h2>
