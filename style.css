@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -43,20 +42,20 @@ h1, h2 {
 
 .about-me-container {
     display: flex;
-    align-items: center; /* Vertically aligns the image and text in the middle */
+    align-items: center;
 }
 
 .about-me-text {
-    flex: 1; /* This means the text will take up the remaining space */
+    flex: 1;
 }
 
 .portrait {
-    flex: 0 0 auto; /* This means the image won't grow or shrink, and its base size is automatic */
-    margin-left: 40px; /* Adds some space between the image and the text */
+    flex: 0 0 auto;
+    margin-left: 40px;
     display: block;
-    max-width: 30%; /* Ensures the image is never larger than its container */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 50%; /* Makes the portrait circular */
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .project-card {
@@ -67,7 +66,7 @@ h1, h2 {
     padding: 10px;
     border-radius: 5px;
     transition: box-shadow 0.3s ease;
-    align-items: flex-start; /* Adjust vertical alignment */
+    align-items: flex-start;
 }
 
 .project-card:hover {
@@ -75,18 +74,18 @@ h1, h2 {
 }
 
 .project-card img {
-    flex: 0 0 auto; /* Don't grow, don't shrink, auto for natural aspect ratio */
-    width: 300px; /* Fixed width for all images */
-    height: 200px; /* Fixed height for all images */
-    object-fit: cover; /* Cover the area without breaking aspect ratio */
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
     margin-right: 20px;
     border-radius: 5px;
 }
 
 .project-card iframe {
-    flex: 0 0 auto; /* Don't grow, don't shrink, auto for natural aspect ratio */
-    width: 560; /* Fixed width for all iframes */
-    height: 315; /* Fixed height for all iframes */
+    flex: 0 0 auto;
+    width: 560;
+    height: 315;
     margin-right: 20px;
     border-radius: 5px;
 }
@@ -99,38 +98,37 @@ h1, h2 {
 
 .project-button {
     display: inline-block;
-    background-color: #007BFF; /* Primary button color */
-    color: #FFFFFF; /* Text color */
-    padding: 12px 24px; /* Vertical and horizontal padding */
-    font-size: 16px; /* Text size */
-    border: none; /* Removes the default border */
-    cursor: pointer; /* Changes the cursor to indicate it's clickable */
-    border-radius: 5px; /* Rounds the corners */
-    text-decoration: none; /* Removes underline from links */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-    margin-top: 20px; /* Adds space between the button and the text */
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
 }
 
 .project-button:hover {
-    background-color: #0056b3; /* Darker shade for hover state */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adds shadow to lift the button */
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
 
     .about-me-container {
-        flex-direction: column; /* Stack image and text on top of each other */
+        flex-direction: column;
     }
 
     .portrait {
-        order: -1; /* This will place the image above the text */
-        margin-bottom: 20px; /* Adds some space between the image and the text */
-        margin-left: 0; /* Removes the margin on the left */
-        max-width: 50%; /* Make the image full width on small screens */
+        order: -1;
+        margin-bottom: 20px;
+        margin-left: 0;
+        max-width: 50%;
     }
 
     .project-card {
@@ -139,9 +137,17 @@ h1, h2 {
     }
 
     .project-card img {
-        margin: 0 auto 20px; /* Center image on small screens and add margin below */
-        width: 100%; /* Make image full width on small screens */
-        max-width: 300px; /* Adjust max-width for mobile */
-        height: auto; /* Adjust height to maintain aspect ratio on small screens */
+        margin: 0 auto 20px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .project-card iframe {
+        margin: 0 auto 20px;
+        width: 100%;
+        max-width: 560px;
+        max-height: 315px;
+        height: calc(100vw * 9 / 16);
     }
 }
